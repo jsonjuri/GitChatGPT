@@ -1,0 +1,70 @@
+# Directly used
+	torch==2.1.0
+	tqdm~=4.66.1
+	
+    langchain==0.0.334
+        # Use LangChain with GPT4All and LLaMA type LLMs
+        gpt4all==2.0.2
+        llama-cpp-python==0.2.16
+
+    # Vector Databases
+    chromadb==0.4.14
+	deeplake==3.8.4
+	neo4j
+	
+	# OpenAI API (Also required for local webserver config)
+	openai==0.28.1
+	tiktoken==0.1.1
+
+    # Read environment variables from a .env file 
+    python-dotenv==1.0.0
+	
+	# Color print
+	rich==13.6.0
+	
+	# Github
+	GitPython==3.1.40
+	gitdb==4.0.11
+
+	# Api
+	streamlit
+	fastapi
+	pydantic
+	sse-starlette
+	uvicorn
+
+# Huggingface
+    huggingface_hub
+    transformers~=4.35.0
+	accelerate
+	bitsandbytes
+
+# Work with documents, data, for LLMs (following packages are used for langchain.document_loaders' / unstructured)
+    # text and image embeddings for langchain 
+    # https://python.langchain.com/docs/integrations/text_embedding/sentence_transformers
+    sentence_transformers==2.2.2
+    
+    # pdf
+    # https://api.python.langchain.com/en/latest/document_loaders/langchain.document_loaders.pdf.PyPDFLoader.html
+    PyMuPDF==1.23.3
+
+    # designed to help preprocess structure unstructured text documents for use in downstream machine learning tasks.
+    # https://github.com/Unstructured-IO/unstructured
+    # notably used by UnstructuredEmailLoader https://python.langchain.com/docs/integrations/document_loaders/email
+    unstructured==0.10.8
+
+    # used for conversion of files from one format to another (PDF, docx etc.) 
+    # used by unstructured
+    pypandoc==1.11
+
+    # https://python.langchain.com/docs/integrations/document_loaders/epub
+    pandoc==2.3
+
+    # used by UnstructuredPowerPointLoader
+    python-pptx==0.6.22
+
+    # used by UnstructuredWordDocumentLoader
+    python-docx==0.8.11
+	
+	# used by UnstructuredMarkdownLoader
+	Markdown==3.5.1

@@ -1,0 +1,15 @@
+store/
+.env
+models/gpt4all/*.bin
+models/gpt4all/*.gguf
+models/ollama/*.bin
+models/ollama/*.gguf
+models/llamacpp/*.bin
+models/llamacpp/*.gguf
+db/*
+documents/*
+repositories/*
+__pycache__
+venv
+.venv
+.idea

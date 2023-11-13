@@ -1,0 +1,26 @@
+services:
+  streamlit:
+    build:
+      dockerfile: streamlit.Dockerfile
+    volumes:
+      - $PWD/document_path:/document_path
+      - $PWD/model_path:/model_path
+      - $PWD/db_path:/db_path
+    environment:
+      - DOCUMENT_PATH=${DOCUMENT_PATH-documents}
+      - MODEL_PATH=${MODEL_PATH-models}
+      - DB_PATH=${DB_PATH-db}
+    networks:
+      - net
+    x-develop:
+      watch:
+        - action: rebuild
+          path: .
+          ignore:
+            - cli.py
+            - cli_simple.py
+    restart: always
+    ports:
+      - 8501:8501
+networks:
+  net:

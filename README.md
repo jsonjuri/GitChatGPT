@@ -53,7 +53,7 @@ We highly recommend using [LM Studio](https://lmstudio.ai). With LM Studio, you 
 1) 📦 Download [LM Studio](https://lmstudio.ai) and install it.
 2) 🔧 Start LM Studio and load your preferred model with just a click.
 3) 🌐 Navigate to the Local Server tab in LM Studio, and choose 'Run Server.' This sets up your local server for a personalized experience.
-4) 🚀 When launching RepoWizard, opt for the 'Localhost Server' option. This ensures RepoWizard connects seamlessly to your locally hosted server.
+4) 🚀 When launching GitChatGPT, opt for the 'Localhost Server' option. This ensures GitChatGPT connects seamlessly to your locally hosted server.
 
 ## 🐳 Docker with Streamlit
 ```bash

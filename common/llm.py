@@ -56,7 +56,7 @@ def load_embedding_model(embedding_model_name: str, settings=None):
         case _default:
             embeddings = SentenceTransformerEmbeddings(
                 model_name="all-MiniLM-L6-v2",
-                cache_folder="/embedding_model"
+                cache_folder="/"
             )
             dimension = 384
 
